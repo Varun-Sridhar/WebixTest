@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { ChartModule, LineSeriesService, CategoryService, DateTimeService, AreaSeriesService, ZoomService, ScrollBarService} from '@syncfusion/ej2-angular-charts';
 //import {DashboardLayout, PanelModel} from '@syncfusion/ej2-angular-layouts';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScoresComponent } from './scores/scores.component';
 import { WebixLayoutComponent} from './components/webix-layout.component';
@@ -15,6 +15,8 @@ import { ZoomingComponent } from './components/zooming.component';
 import { PostComponent } from './components/post.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { WebixDashboardComponent } from './components/webix-dashboard.component';
+import { RouteTest1Component } from './components/route-test1.component';
+import { RouteTest2Component } from './components/route-test2.component';
 //import { DashboardComponent } from './components/dashboard.component';
 
 @NgModule({
@@ -26,7 +28,9 @@ import { WebixDashboardComponent } from './components/webix-dashboard.component'
     ZoomingComponent,
     PostComponent,
     EmployeesComponent,
-    WebixDashboardComponent
+    WebixDashboardComponent,
+    routingComponents
+
     //DashboardComponent
   ],
   imports: [

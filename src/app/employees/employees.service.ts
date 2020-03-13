@@ -1,4 +1,4 @@
-import { HttpHeaders } from '@angular/common/http';
+//import { HttpHeaders } from '@angular/common/http';
 import { IEmployees } from './employees';
 import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
