@@ -1,0 +1,16 @@
+<div> 
+    <table>
+        <thead>
+            <tr>
+                <th>Score</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees;">
+                <td>{{emp.EmployeeId}}</td>
+                <td>{{emp.BeaconId}}</td>
+            </tr>
+        </tbody>
+    </table>   
+</div>

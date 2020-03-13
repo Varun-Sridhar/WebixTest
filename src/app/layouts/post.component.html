@@ -1,0 +1,39 @@
+<div> 
+    <form (ngSubmit)="addEmployee(addEmployeeForm)" #addEmployeeForm="ngForm">
+        <label>EmployeeId:</label>
+        <input class="form-control" ngModel #EmployeeId="ngModel" name="EmployeeId" type="number"> <br><br> 
+        <label>BeaconId:</label>
+        <input class="form-control" ngModel #BeaconId="ngModel" name="BeaconId" type="number"> <br><br> 
+        <label>DirectManagerEmployeeId:</label>
+        <input class="form-control" ngModel #DirectManagerEmployeeId="ngModel" name="DirectManagerEmployeeId" type="number"> <br><br>
+        <label>MatrixManagerEmployeeId:</label>
+        <input class="form-control" ngModel #MatrixManagerEmployeeId="ngModel" name="MatrixManagerEmployeeId" type="number"> <br><br>
+        <label>HireDate:</label>
+        <input class="form-control" ngModel #HireDate="ngModel" name="HireDate" type="datetime"> <br><br>
+        <label>Division:</label>
+        <input class="form-control" ngModel #Division="ngModel" name="Division" type="number"> <br><br>
+        <label>Department:</label>
+        <input class="form-control" ngModel #Department="ngModel" name="Department" type="string"> <br><br>
+        <label>JobTitle:</label>
+        <input class="form-control" ngModel #JobTitle="ngModel" name="JobTitle" type="number"> <br><br>
+        <label>JobTitle2:</label>
+        <input class="form-control" ngModel #JobTitle2="ngModel" name="JobTitle2" type="string"> <br><br>
+        <label>Location:</label>
+        <input class="form-control" ngModel #Location="ngModel" name="Location" type="number"> <br><br>
+        <label>Sublocation:</label>
+        <input class="form-control" ngModel #Sublocation="ngModel" name="Sublocation" type="string"> <br><br>
+        <label>Status:</label>
+        <input class="form-control" ngModel #Status="ngModel" name="Status" type="number"> <br><br>
+        <label>ConfirmationDate:</label>
+        <input class="form-control" ngModel #ConfirmationDate="ngModel" name="ConfirmationDate" type="datetime"> <br><br>
+        <label>PayrollId:</label>
+        <input class="form-control" ngModel #PayrollId="ngModel" name="PayrollId" type="number"> <br><br>
+        <label>JobtitleDescription:</label>
+        <input class="form-control" ngModel #JobtitleDescription="ngModel" name="JobtitleDescription" type="string"> <br><br>
+        <label>TradingSystem:</label>
+        <input class="form-control" ngModel #TradingSystem="ngModel" name="TradingSystem" type="string"> <br><br>
+
+        <button type="submit">POST</button>
+    </form>
+
+</div>

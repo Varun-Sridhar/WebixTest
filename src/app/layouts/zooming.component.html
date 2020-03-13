@@ -1,0 +1,26 @@
+<ejs-chart [primaryXAxis]='xAxis' [primaryYAxis]='yAxis'  [dataSource]='scores' [zoomSettings]='zoom'>
+    <e-series-collection>
+        <e-series type='line' xName='Date' yName='Score' opacity=0.2></e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<div>
+    <button (click)="displayData()">Display Background Data</button>
+</div>
+
+<div *ngIf="dispData">
+    <table>
+        <thead>
+            <tr>
+                <th>Score</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let score of scores;">
+                <td>{{score.Score}}</td>
+                <td>{{score.Date}}</td>
+            </tr>
+        </tbody>
+    </table>   
+</div>
